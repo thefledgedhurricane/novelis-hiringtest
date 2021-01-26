@@ -6,8 +6,13 @@ module.exports = {
     node: true,
     browser: true,
   },
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2020,
     sourceType: "module",
     ecmaFeatures: {
       jsx: true,
