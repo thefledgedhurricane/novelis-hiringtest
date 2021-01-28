@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 module.exports = {
-  parser: "babel-eslint",
+  parser: 'babel-eslint',
   env: {
     es2020: true,
     node: true,
@@ -8,20 +8,23 @@ module.exports = {
   },
   settings: {
     react: {
-      version: "detect"
+      version: 'detect'
     }
   },
   parserOptions: {
     ecmaVersion: 11,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
   },
-  plugins: ["react"],
+  plugins: ['react'],
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
   ],
+  'rules': {   
+      'prettier/prettier': ['error', { 'endOfLine': 'auto',quotes: ['double']    }]   
+  } 
 };
