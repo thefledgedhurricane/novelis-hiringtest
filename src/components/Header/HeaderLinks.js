@@ -19,7 +19,7 @@ export default function HeaderLinks() {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <a
-          href="https://novelis.io/product/novelis-landingpage?ref=mkr-navbar"
+          href="https://novelis.io"
           color="transparent"
           target="_blank"
           rel="noreferrer"
@@ -32,7 +32,7 @@ export default function HeaderLinks() {
       </ListItem>
       <ListItem className={classes.listItem}>
         <a
-          href="https://novelis.io/product/novelis-landingpage?ref=mkr-navbar"
+          href="https://novelis.io"
           color="transparent"
           target="_blank"
           rel="noreferrer"
@@ -45,7 +45,7 @@ export default function HeaderLinks() {
       </ListItem>
       <ListItem className={classes.listItem}>
         <a
-          href="https://novelis.io/product/novelis-landingpage?ref=mkr-navbar"
+          href="https://novelis.io"
           color="transparent"
           target="_blank"
           rel="noreferrer"
@@ -58,7 +58,7 @@ export default function HeaderLinks() {
       </ListItem>
       <ListItem className={classes.listItem}>
         <a
-          href="https://novelis.io/product/novelis-landingpage?ref=mkr-navbar"
+          href="https://novelis.io"
           color="transparent"
           target="_blank"
           rel="noreferrer"
@@ -71,7 +71,7 @@ export default function HeaderLinks() {
       </ListItem>
       <ListItem className={classes.listItem}>
         <a
-          href="https://novelis.io/product/novelis-landingpage?ref=mkr-navbar"
+          href="https://novelis.io"
           color="transparent"
           target="_blank"
           rel="noreferrer"
@@ -85,7 +85,7 @@ export default function HeaderLinks() {
       </ListItem>
       <ListItem className={classes.listItem}>
         <a
-          href="https://novelis.io/product/novelis-landingpage?ref=mkr-navbar"
+          href="https://novelis.io"
           color="transparent"
           target="_blank"
           rel="noreferrer"
@@ -101,7 +101,7 @@ export default function HeaderLinks() {
         <GridContainer justify="center">
           <GridItem xs={4} sm={4} md={4}>
             <a
-              href="https://novelis.io/product/novelis-landingpage?ref=mkr-navbar"
+              href="https://novelis.io"
               color="transparent"
               target="_blank"
               rel="noreferrer"
@@ -112,7 +112,7 @@ export default function HeaderLinks() {
           </GridItem>
           <GridItem xs={4} sm={4} md={4}>
             <a
-              href="https://novelis.io/product/novelis-landingpage?ref=mkr-navbar"
+              href="https://novelis.io"
               color="transparent"
               target="_blank"
               rel="noreferrer"
