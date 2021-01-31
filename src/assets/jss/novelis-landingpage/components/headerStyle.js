@@ -39,11 +39,11 @@ const headerStyle = {
     ...container,
     flex: '1',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     display: 'flex',
   },
   flex: {
-    flex: 2,
+    flex: 1,
   },
   title: {
     ...defaultFont,

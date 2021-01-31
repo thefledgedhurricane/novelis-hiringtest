@@ -96,22 +96,15 @@ legend {
 }
 
 a {
-  color: $link-color;
   text-decoration: none;
   background-color: transparent;
   &:hover,
   &:focus {
-    color: darken($link-color, 5%);
+    transition: all 0.3s;
     text-decoration: none;
   }
 }
 
-label {
-  font-size: 14px;
-  line-height: 1.42857;
-  color: $checkboxes-text-color;
-  font-weight: 400;
-}
 small {
   font-size: 75%;
   color: #777;

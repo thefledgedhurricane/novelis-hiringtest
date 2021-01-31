@@ -36,8 +36,14 @@ const BlogPosts = () => {
         : error
         ? error.message
         : posts.slice(0, 3).map((p) => (
-            <GridItem xs={12} sm={12} md={4} className={classes.marginAuto}>
-              <Card id={p.source.id} className={classes.root}>
+            <GridItem
+              id={p.index}
+              xs={12}
+              sm={12}
+              md={4}
+              className={classes.marginAuto}
+            >
+              <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia
                     className={classes.media}

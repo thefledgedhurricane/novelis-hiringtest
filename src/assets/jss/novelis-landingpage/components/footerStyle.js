@@ -18,15 +18,15 @@ const footerStyle = {
     position: 'inherit',
     width: '100%',
     paddingTop: '10rem',
-    paddingLeft: '7rem',
-    paddingRight: '7rem',
+    paddingLeft: '16rem',
+    paddingRight: '16rem',
     textAlign: 'justify',
-    fontSize: '18px',
+    fontSize: '14px',
     lineHeight: '32px',
     fontWeight: 'regular',
   },
-  space20: {
-    height: '20px',
+  space15: {
+    height: '15px',
     display: 'block',
   },
   svg: {
@@ -44,7 +44,6 @@ const footerStyle = {
     position: 'relative',
     alignItems: 'center',
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'scroll',
     backgroundPosition: 'center center',
     backgroundImage: `url(${Background})`,
@@ -73,7 +72,7 @@ const footerStyle = {
   },
   socialIcons: {
     position: 'relative',
-    fontSize: '36px !important',
+    fontSize: '24px !important',
     marginRight: '4px',
     color: '#ffffff',
     width: '26px',

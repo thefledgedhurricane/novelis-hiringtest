@@ -61,7 +61,7 @@ export default function Footer(props) {
             Intelligence Artificielle, Data Engineering et Smart Automation
             (RPA, OCR, NLP).
           </div>
-          <div className={classes.space20} />
+          <div className={classes.space15} />
           <div>
             Partenaire de l{"'"}école polytechnique, Novelis apporte ses
             compétences dans différents secteurs d{"'"}activité en investissant
@@ -69,7 +69,7 @@ export default function Footer(props) {
             à ces efforts de Recherche, Novelis est reconnue {'"'}Jeune
             entreprise innovante{'"'} pour la deuxième année consécutive.
           </div>
-          <div className={classes.space20} />
+          <div className={classes.space15} />
           <a rel="noopener noreferrer" href="">
             <TwitterIcon className={classes.socialIcons} />
           </a>

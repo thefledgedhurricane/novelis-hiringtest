@@ -25,7 +25,9 @@ export default function HeaderLinks() {
           rel="noreferrer"
           className={classes.navLink}
         >
-          <span>ACCUEIL</span>
+          <span>
+            ACCUEIL <span className={classes.navLinkplusActive} />
+          </span>
         </a>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -36,7 +38,9 @@ export default function HeaderLinks() {
           rel="noreferrer"
           className={classes.navLink}
         >
-          <span>QUI SOMMES NOUS ?</span>
+          <span>
+            QUI SOMMES NOUS ?<span className={classes.navLinkplus} />
+          </span>
         </a>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -47,7 +51,9 @@ export default function HeaderLinks() {
           rel="noreferrer"
           className={classes.navLink}
         >
-          <span> NOS OFFRES </span>
+          <span>
+            NOS OFFRES <span className={classes.navLinkplus} />
+          </span>
         </a>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -58,7 +64,9 @@ export default function HeaderLinks() {
           rel="noreferrer"
           className={classes.navLink}
         >
-          <span>CARRIERES </span>
+          <span>
+            CARRIERES <span className={classes.navLinkplus} />
+          </span>
         </a>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -69,7 +77,10 @@ export default function HeaderLinks() {
           rel="noreferrer"
           className={classes.navLink}
         >
-          LAB NOVELIS
+          <span>
+            LAB NOVELIS
+            <span className={classes.navLinkplus} />
+          </span>
         </a>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -80,7 +91,10 @@ export default function HeaderLinks() {
           rel="noreferrer"
           className={classes.navLink}
         >
-          <span> BLOG </span>
+          <span>
+            BLOG
+            <span className={classes.navLinkplus} />
+          </span>
         </a>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -93,7 +107,7 @@ export default function HeaderLinks() {
               rel="noreferrer"
               className={classes.navLink}
             >
-              <img src={imgfr} alt="Second slide" />
+              <img src={imgfr} alt="fr" />
             </a>
           </GridItem>
           <GridItem xs={4} sm={4} md={4}>
@@ -104,7 +118,7 @@ export default function HeaderLinks() {
               rel="noreferrer"
               className={classes.navLink}
             >
-              <img src={imgen} alt="Second slide" />
+              <img src={imgen} alt="en" />
             </a>
           </GridItem>
         </GridContainer>
