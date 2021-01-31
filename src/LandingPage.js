@@ -14,6 +14,11 @@ import Button from 'components/Buttons/Button.js';
 import HeaderLinks from 'components/Header/HeaderLinks.js';
 import Parallax from 'components/Parallax/Parallax.js';
 import styles from 'assets/jss/novelis-landingpage/landingPage.js';
+import CustomersSection from 'sections/CustomersSection.js';
+import PartnersSection from 'sections/PartnersSection.js';
+import KeyNumbersSection from 'sections/KeyNumbersSection.js';
+import BlogSection from 'sections/BlogSection/BlogSection.js';
+
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
@@ -36,13 +41,13 @@ export default function LandingPage(props) {
         {...rest}
       />
       <Parallax>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem xs={12}>
+        <div className={classes.section}>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={12}>
               <h1 className={classes.title}>
                 Humaniser votre transformation !
               </h1>
-              <h4>
+              <h4 className={classes.description}>
                 Novelis vous accompagne dans la digitalisation de vos documents,
                 l{"'"}automatisation et valorisation de vos processus et l{"'"}
                 urbanisation de votre Système d{"'"}Information. Notre objectif
@@ -52,7 +57,7 @@ export default function LandingPage(props) {
               </h4>
               <br />
             </GridItem>
-            <GridItem xs={3}>
+            <GridItem xs={12} sm={12} md={3}>
               <Button
                 color="danger"
                 size="lg"
@@ -64,7 +69,7 @@ export default function LandingPage(props) {
                 Métiers
               </Button>
             </GridItem>
-            <GridItem item xs={3}>
+            <GridItem xs={12} sm={12} md={3}>
               <Button
                 color="danger"
                 size="lg"
@@ -76,7 +81,7 @@ export default function LandingPage(props) {
                 des documents
               </Button>
             </GridItem>
-            <GridItem item xs={3}>
+            <GridItem xs={12} sm={12} md={3}>
               <Button
                 color="danger"
                 size="lg"
@@ -88,7 +93,7 @@ export default function LandingPage(props) {
                 des processus
               </Button>
             </GridItem>
-            <GridItem item xs={3}>
+            <GridItem xs={12} sm={12} md={3}>
               <Button
                 color="danger"
                 size="lg"
@@ -105,9 +110,13 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
-          <Footer />
+          <CustomersSection />
+          <PartnersSection />
+          <KeyNumbersSection />
+          <BlogSection />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

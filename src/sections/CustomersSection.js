@@ -13,15 +13,17 @@ import Carousel from 'react-slick';
 
 import Card from 'components/Card/Card.js';
 
-import image from 'assets/img/logos/logo_2.jpg';
+import logo1 from 'assets/img/logos/logo_1.jpg';
+import logo2 from 'assets/img/logos/logo_2.jpg';
+import logo3 from 'assets/img/logos/logo_3.jpg';
+import logo4 from 'assets/img/logos/logo_4.jpg';
+import logo5 from 'assets/img/logos/logo_5.jpg';
 
-import stylesCarousel from 'assets/jss/novelis-landingpage/views/componentsSections/carouselStyle.js';
+import styles from 'assets/jss/novelis-landingpage/landingPageSections/CustomersStyle.js';
 
-import styles from 'assets/jss/novelis-landingpage/views/landingPageSections/productStyle.js';
+const useStyles = makeStyles(styles);
 
-const useStyles = makeStyles(styles, stylesCarousel);
-
-export default function ProductSection() {
+export default function CustomersSection() {
   const classes = useStyles();
   const settings = {
     infinite: true,
@@ -34,6 +36,7 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
+          <div className={classes.sectionDevider}></div>
           <h2 className={classes.title}>Nous les aidons à se transformer</h2>
           <h5 className={classes.description}>
             Depuis sa création, Novelis accompagne ses clients dans leurs
@@ -47,18 +50,24 @@ export default function ProductSection() {
       </GridContainer>
       <div />
       <div className={classes.container}>
-        <GridContainer>
+        <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
             <Card carousel>
               <Carousel {...settings}>
                 <div>
-                  <img src={image} alt="First slide" className="slick-image" />
+                  <img src={logo1} alt="First slide" className="slick-image" />
                 </div>
                 <div>
-                  <img src={image} alt="Second slide" className="slick-image" />
+                  <img src={logo2} alt="Second slide" className="slick-image" />
                 </div>
                 <div>
-                  <img src={image} alt="Third slide" className="slick-image" />
+                  <img src={logo3} alt="Third slide" className="slick-image" />
+                </div>
+                <div>
+                  <img src={logo4} alt="Third slide" className="slick-image" />
+                </div>
+                <div>
+                  <img src={logo5} alt="Third slide" className="slick-image" />
                 </div>
               </Carousel>
             </Card>

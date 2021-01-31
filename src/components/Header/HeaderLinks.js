@@ -1,18 +1,14 @@
 import React from 'react';
-
-// react components for routing our app without refresh
-
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import imgfr from 'assets/img/language_icons/fr.png';
-import imgen from 'assets/img/language_icons/en.png';
 
 // core components
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
 import GridContainer from 'components/Grid/GridContainer.js';
 import GridItem from 'components/Grid/GridItem.js';
-
+import imgfr from 'assets/img/language_icons/fr.png';
+import imgen from 'assets/img/language_icons/en.png';
 import styles from 'assets/jss/novelis-landingpage/components/headerLinksStyle.js';
 
 const useStyles = makeStyles(styles);

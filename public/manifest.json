@@ -1,6 +1,6 @@
 {
-  'short_name': 'React App',
-  'name': 'Create React App Sample',
+  'short_name': 'Novelis',
+  'name': 'Novelis Landing Page',
   'icons': [
     {
       'src': 'favicon.ico',

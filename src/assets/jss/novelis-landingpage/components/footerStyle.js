@@ -1,48 +1,56 @@
-import { container, primaryColor } from 'assets/jss/novelis-landingpage.js';
-import Background from 'assets/img/footer-bg.svg';
+import { container, defaultFont } from 'assets/jss/novelis-landingpage.js';
+
+import Background from 'assets/img/footer-bg.png';
 const footerStyle = {
-  wrapper: {
-    width: '100%',
-    marginRight: 'auto',
-    marginLeft: 'auto',
-  },
   block: {
     color: 'inherit',
     padding: '0.9375rem',
     fontWeight: '500',
-    fontSize: '12px',
+    fontSize: '18px',
     textTransform: 'uppercase',
     textDecoration: 'none',
     position: 'relative',
     display: 'block',
   },
-  left: {
-    float: 'left!important',
-    display: 'block',
+  content: {
+    ...defaultFont,
+    display: 'relative',
     position: 'inherit',
+    width: '100%',
+    paddingTop: '10rem',
+    paddingLeft: '7rem',
+    paddingRight: '7rem',
+    textAlign: 'justify',
+    fontSize: '18px',
+    lineHeight: '32px',
+    fontWeight: 'regular',
   },
-  right: {
-    padding: '15px 0',
-    margin: '0',
-    float: 'right!important',
+  space20: {
+    height: '20px',
+    display: 'block',
+  },
+  svg: {
+    backgroundColor: '#FFFFFF',
+    position: 'absolute',
+    left: '0',
+    top: '0',
+    zIndex: '-1',
   },
   footer: {
-    height: '100%',
     width: '100%',
-    overflow: 'auto',
+    overflow: 'hidden',
     textAlign: 'left',
-    display: 'flex',
-    zIndex: '-1',
-    position: 'absolute',
-    margin: '0',
-    padding: '0',
-    border: '0',
+    display: 'relative',
+    position: 'relative',
     alignItems: 'center',
-    backgroundSize: '100% 100%',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'scroll',
+    backgroundPosition: 'center center',
     backgroundImage: `url(${Background})`,
   },
   a: {
-    color: primaryColor,
+    color: '#FFFFFF',
     textDecoration: 'none',
     backgroundColor: 'transparent',
   },
@@ -52,11 +60,6 @@ const footerStyle = {
     },
   },
   container,
-  list: {
-    marginBottom: '0',
-    padding: '0',
-    marginTop: '0',
-  },
   inlineBlock: {
     display: 'inline-block',
     padding: '0px',
@@ -67,6 +70,17 @@ const footerStyle = {
     height: '18px',
     position: 'relative',
     top: '3px',
+  },
+  socialIcons: {
+    position: 'relative',
+    fontSize: '36px !important',
+    marginRight: '4px',
+    color: '#ffffff',
+    width: '26px',
+    height: '26px',
+    lineHeight: '26px',
+    marginLeft: '6px',
+    marginBottom: '12px',
   },
 };
 export default footerStyle;

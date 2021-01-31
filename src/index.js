@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import { Provider } from 'react-redux';
+import store from 'sections/BlogSection/store/store';
 import 'assets/scss/novelis-landingpage.scss?v=1.0.0';
+import LandingPage from 'LandingPage';
 
-// pages for this product
-import LandingPage from 'LandingPage.js';
-
-ReactDOM.render(<LandingPage />, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <LandingPage />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);

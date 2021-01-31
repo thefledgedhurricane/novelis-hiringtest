@@ -1,12 +1,11 @@
 import { defaultFont } from 'assets/jss/novelis-landingpage.js';
 
-import tooltip from 'assets/jss/novelis-landingpage/tooltipsStyle.js';
-
-const headerLinksStyle = (theme) => ({
+const headerLinksStyle = () => ({
   list: {
     ...defaultFont,
-    fontSize: '14px',
+    fontSize: '18px',
     margin: 0,
+    justify: 'center',
     paddingLeft: '0',
     listStyle: 'none',
     paddingTop: '0',
@@ -21,69 +20,32 @@ const headerLinksStyle = (theme) => ({
     width: 'auto',
     margin: '0',
     padding: '0',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-      '&:after': {
-        width: 'calc(100% - 70px)',
-        content: ' ',
-        display: 'block',
-        height: '1px',
-        marginLeft: '15px',
-        backgroundColor: '#e5e5e5',
-      },
-    },
   },
   listItemText: {
     padding: '0 !important',
   },
   navLink: {
-    color: '#000000',
     position: 'relative',
-    padding: '0.9375rem',
-    fontWeight: '400',
-    fontSize: '16px',
-    textTransform: 'uppercase',
-    textDecoration: 'none',
-    margin: '0px',
-    display: 'inline-flex',
-    '&:hover,&:focus': {
-      color: 'inherit',
-      background: '#c32026',
-      width: '3px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      width: 'calc(100% - 60px)',
-      marginLeft: '15px',
-      marginBottom: '8px',
-      marginTop: '8px',
-      textAlign: 'left',
-      '& > span:first-child': {
-        justifyContent: 'flex-start',
-      },
-    },
-  },
-  notificationNavLink: {
+    zIndex: 1,
+    display: ['inline-block'],
+    verticalAlign: 'middle',
+    height: '100%',
+    opacity: 1,
     color: 'inherit',
-    padding: '0.9375rem',
-    fontWeight: '400',
-    fontSize: '12px',
-    textTransform: 'uppercase',
-    lineHeight: '20px',
-    textDecoration: 'none',
-    margin: '0px',
-    display: 'inline-flex',
-    top: '4px',
-  },
-  registerNavLink: {
-    top: '3px',
-    position: 'relative',
-    fontWeight: '400',
-    fontSize: '12px',
-    textTransform: 'uppercase',
-    lineHeight: '20px',
-    textDecoration: 'none',
-    margin: '0px',
-    display: 'inline-flex',
+    padding: '0 20px',
+    textTransform: 'capitalize',
+    letterSpacing: '0',
+    '&:after,&:focus': {
+      content: "''",
+      width: '0',
+      height: '3px',
+      borderRadius: '25px',
+      display: 'inline-block',
+      position: 'absolute',
+      left: '0px',
+      bottom: '-3px',
+      backgroundColor: '#c32026',
+    },
   },
   navLinkActive: {
     color: 'inherit',
@@ -99,15 +61,6 @@ const headerLinksStyle = (theme) => ({
     fontSize: '20px !important',
     marginRight: '4px',
   },
-  dropdownLink: {
-    '&,&:hover,&:focus': {
-      color: 'inherit',
-      textDecoration: 'none',
-      display: 'block',
-      padding: '10px 20px',
-    },
-  },
-  ...tooltip,
   marginRight5: {
     marginRight: '5px',
   },

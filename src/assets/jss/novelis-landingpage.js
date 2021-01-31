@@ -5,25 +5,22 @@ const transition = {
 };
 
 const containerFluid = {
-  paddingRight: '15px',
-  paddingLeft: '15px',
-  marginRight: 'auto',
-  marginLeft: 'auto',
-  width: '100%',
+  width: 'inherit',
 };
+
 const container = {
   ...containerFluid,
   '@media (min-width: 576px)': {
-    maxWidth: '540px',
+    maxWidth: '100%',
   },
   '@media (min-width: 768px)': {
-    maxWidth: '720px',
+    maxWidth: '100%',
   },
   '@media (min-width: 992px)': {
-    maxWidth: '960px',
+    maxWidth: '100%',
   },
   '@media (min-width: 1200px)': {
-    maxWidth: '1140px',
+    maxWidth: '100%',
   },
 };
 
@@ -44,12 +41,12 @@ const card = {
 };
 
 const defaultFont = {
-  fontFamily: 'Nunito Sans',
-  fontWeight: '300',
+  fontFamily: 'Nunito Sans,sans-serif',
+  fontWeight: 'bold',
   lineHeight: '1.5em',
 };
 
-const primaryColor = '#9c27b0';
+const primaryColor = '#c32026';
 const warningColor = '#ff9800';
 const dangerColor = '#f44336';
 const successColor = '#4caf50';
@@ -60,7 +57,7 @@ const BlackColor = '#000000 ';
 
 const primaryBoxShadow = {
   boxShadow:
-    '0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2)',
+    '0 12px 20px -10px rgba(152, 39, 38, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(152, 39, 37, 0.2)',
 };
 const infoBoxShadow = {
   boxShadow:
@@ -105,7 +102,7 @@ const infoCardHeader = {
 };
 const primaryCardHeader = {
   color: '#fff',
-  background: 'linear-gradient(60deg, #ab47bc, #8e24aa)',
+  background: 'linear-gradient(60deg, #c32026, #c32018)',
   ...primaryBoxShadow,
 };
 const roseCardHeader = {
@@ -137,11 +134,11 @@ const defaultBoxShadow = {
 };
 
 const title = {
-  color: '#3C4858',
+  color: '#000000',
   margin: '1.75rem 0 0.875rem',
   textDecoration: 'none',
-  fontWeight: '700',
-  fontFamily: `'Nunito Sans Slab','sans-serif`,
+  fontWeight: 'bold',
+  fontFamily: 'Nunito Sans,sans-serif',
   textAlign: 'center',
 };
 
@@ -159,6 +156,44 @@ const cardLink = {
 const cardSubtitle = {
   marginBottom: '0',
   marginTop: '-.375rem',
+};
+
+const sectionDevider = {
+  background: '#c32026',
+  position: 'absolute',
+  zIndex: 0,
+  top: '0',
+  width: '40px',
+  height: '3px',
+  WebkitBorderRadius: '2px',
+  MozBorderRadius: '2px',
+  borderRadius: '2px',
+  left: '50%',
+  marginLeft: '-20px',
+  '&:after': {
+    content: "''",
+    position: 'absolute',
+    zIndex: 1,
+    width: '10px',
+    height: '3px',
+    WebkitBorderRadius: '2px',
+    MozBorderRadius: '2px',
+    borderRadius: '2px',
+    right: '-20px',
+    background: '#c32026',
+  },
+  '&:before': {
+    content: "''",
+    position: 'absolute',
+    zIndex: 1,
+    width: '10px',
+    height: '3px',
+    WebkitBorderRadius: '2px',
+    MozBorderRadius: '2px',
+    borderRadius: '2px',
+    left: '-20px',
+    background: '#c32026',
+  },
 };
 
 export {
@@ -197,4 +232,5 @@ export {
   cardTitle,
   cardLink,
   cardSubtitle,
+  sectionDevider,
 };

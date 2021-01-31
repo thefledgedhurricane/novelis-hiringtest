@@ -1,9 +1,9 @@
 import ParallaxBackground from 'assets/img/landing-bg.jpg';
+import { title, container } from 'assets/jss/novelis-landingpage.js';
 
 const parallaxStyle = {
   parallax: {
     height: '90vh',
-    maxHeight: '100%',
     position: 'relative',
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
@@ -13,6 +13,24 @@ const parallaxStyle = {
     display: 'flex',
     alignItems: 'center',
     backgroundImage: `url(${ParallaxBackground})`,
+  },
+  container: {
+    ...container,
+    backgroundColor: '#F4F6FD',
+  },
+  title: {
+    ...title,
+    marginBottom: '1rem',
+    marginTop: '30px',
+    minHeight: '32px',
+    textDecoration: 'none',
+  },
+  description: {
+    color: '#999',
+  },
+  section: {
+    padding: '70px 0',
+    textAlign: 'center',
   },
   filter: {
     '&:before': {
