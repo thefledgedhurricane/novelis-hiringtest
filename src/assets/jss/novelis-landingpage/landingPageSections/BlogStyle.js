@@ -26,7 +26,7 @@ const BlogStyle = {
     textDecoration: 'none',
   },
   description: {
-    color: '#999',
+    color: '#000000',
   },
   sectionDevider,
   ...imagesStyles,
